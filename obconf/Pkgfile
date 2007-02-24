@@ -1,0 +1,17 @@
+# $Id$
+# Description:  Openbox preferences manager
+# URL:          http://openbox.org/obconf/
+# Packager:     Antonio Bonifati, ant at venus dot deis dot unical dot it
+# Depends on:   openbox, libglade, startup-notification
+
+name=obconf
+version=1.6
+release=1
+source=(http://icculus.org/openbox/obconf/$name-$version.tar.gz)
+
+build () {
+	cd $name-$version
+	./configure --prefix=/usr --disable-nls
+	make
+	make DESTDIR=$PKG install
+}
