@@ -1,0 +1,15 @@
+# Description: Linux drivers for the IC Plus 1000A NIC
+# URL: http://www.icplus.com.tw/pp-IP1000A.html
+# Maintainer: Lucas Hazel, lucas@die.net.au
+
+name=ipg
+version=2.09f
+release=1
+source=(http://www.icplus.com.tw/Data/driver/IP1000A%20Linux%20driver%20v$version.zip)
+
+build() {
+	sed -i "s|config.h|utsrelease.h|g" ipg.h
+	make
+	mkdir -p $PKG/lib/modules/`uname -r`/kernel/drivers/net
+	install ipg.ko $PKG/lib/modules/`uname -r`/kernel/drivers/net/ipg.ko
+}
