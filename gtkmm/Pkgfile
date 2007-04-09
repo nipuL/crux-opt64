@@ -1,0 +1,20 @@
+# Description: A C++ interface for the popular GUI library GTK+
+# URL:         http://gtkmm.sourceforge.net
+# Maintainer:  Han Boetes <han@mijncomputer.nl>
+# Packager:    Han Boetes <han@mijncomputer.nl>
+# Depends on: cairomm
+
+name=gtkmm
+version=2.10.3
+release=1
+source=(http://ftp.gnome.org/pub/GNOME/sources/gtkmm/${version%.?}/gtkmm-$version.tar.gz)
+
+build()
+{
+    cd gtkmm-$version
+    ./configure \
+	--prefix=/usr
+    make
+    make install DESTDIR=$PKG
+    rm -r $PKG/usr/share/
+}

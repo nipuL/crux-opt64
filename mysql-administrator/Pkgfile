@@ -1,0 +1,23 @@
+# Description: MySQL Administrator
+# URL: http://www.mysql.com/products/tools/administrator/
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on: libpcre libglade glib gtkmm
+
+name=mysql-administrator
+version=5.0r11
+release=1
+source=(http://www.vi.kernel.org/pub/mirrors/gentoo/source/distfiles/mysql-gui-tools-$version.tar.gz)
+
+build() {
+	cd mysql-gui-tools-$version/mysql-gui-common
+	./configure --prefix=/usr \
+		--with-commondirname=common/administrator
+	make
+	make DESTDIR=$PKG install
+	
+	cd ../mysql-administrator
+	./configure --prefix=/usr \
+		--with-commondirname=common/administrator
+	make
+	make DESTDIR=$PKG install
+}

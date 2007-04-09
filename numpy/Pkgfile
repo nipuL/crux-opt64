@@ -1,0 +1,18 @@
+# Description: Array processing for numbers, strings, records, and objects with Python.
+# URL: http://numeric.scipy.org/
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Packager: Danny Rawlins, romster at shortcircuit dot net dot au
+# Depends on: python
+
+name=numpy
+version=1.0.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/numpy/numpy-$version.tar.gz)
+
+build() {
+	cd numpy-$version
+	python setup.py install --root=$PKG
+	rm $PKG/usr/lib/python2.?/site-packages/numpy/{COMPATIBILITY,*.txt}
+	rm -r $PKG/usr/lib/python2.?/site-packages/numpy/{doc,f2py/{docs,lib/README.txt,lib/THANKS.txt,lib/DEV_README.txt}}
+}
+

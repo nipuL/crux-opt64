@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/bin	usr/bin/
+-r-xr-xr-x	root/bin	usr/bin/chdman
+-r-xr-xr-x	root/bin	usr/bin/jedutil
+-r-xr-xr-x	root/bin	usr/bin/romcmp
+-r-xr-xr-x	root/bin	usr/bin/xmame.SDL
+-r-xr-xr-x	root/bin	usr/bin/xml2info
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/bin	usr/man/man6/
+-r--r--r--	root/bin	usr/man/man6/xmame.6.gz

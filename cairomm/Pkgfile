@@ -1,0 +1,19 @@
+# Description: A C++ interface for cairo
+# URL:         http://cairographics.org/cairomm/
+# Maintainer:  Han Boetes <han@mijncomputer.nl>
+# Depends on:  glibmm
+
+name=cairomm
+version=1.2.2
+release=1
+source="http://cairographics.org/releases/cairomm-$version.tar.gz"
+
+build()
+{
+    cd cairomm-$version
+    ./configure \
+	--prefix=/usr
+    make
+    make install DESTDIR=$PKG
+    rm -rf $PKG/usr/share/
+}

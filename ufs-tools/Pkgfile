@@ -1,0 +1,17 @@
+# Description: UFS tools
+# URL: http://ufs-linux.sourceforge.net/
+# Maintainer: Lucas Hazel, lucas@die.net.au
+
+name=ufs-tools
+version=0.1
+release=1
+source=(http://dl.sf.net/ufs-linux/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	wget http://lkml.org/lkml/diff/2006/5/20/48/1 -O $name.patch
+	patch -p1 -i $name.patch
+	make
+	install -D mkufs $PKG/usr/bin/mkufs
+	install -D libufs/libufs.so $PKG/usr/lib/libufs/libufs.so
+}

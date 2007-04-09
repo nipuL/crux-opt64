@@ -1,0 +1,16 @@
+# Description: MAME emulator for X11
+# URL: http://x.mame.net
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on: libsdl
+
+name=xmame
+version=0.106
+release=1
+source=(http://x.mame.net/download/$name-$version.tar.bz2 makefile.crux64)
+
+build() {
+	cd $name-$version
+	cp -f $SRC/makefile.crux64 makefile.unix
+	make
+	make install
+}

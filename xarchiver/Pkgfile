@@ -1,0 +1,21 @@
+# Description: universal frontend to packagers
+# URL:         http://xarchiver.xfce.org/
+# Maintainer:  Lucas Hazel, lucas@die.net.au
+# Packager:    Han Boetes <han@mijncomputer.nl>
+# Depends on:  gtk
+
+name=xarchiver
+version=0.4.6
+release=1
+source="http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2"
+
+build()
+{
+    cd $name-$version
+    ./configure \
+        --prefix=/usr \
+        --disable-nls
+    make
+    make install DESTDIR=$PKG
+    rm -rf $PKG/usr/share/{doc,locale}
+}

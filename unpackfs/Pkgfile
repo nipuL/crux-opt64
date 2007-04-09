@@ -1,0 +1,17 @@
+# Description: View archives using FUSE
+# URL: http://www.nongnu.org/unpackfs/
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on: fuse
+
+name=unpackfs
+version=0.0.6
+release=1
+source=(http://download.savannah.nongnu.org/releases/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	install -D src/$name $PKG/usr/bin/$name
+	install -D -m 644 src/${name}.config $PKG/usr/etc/$name
+}
