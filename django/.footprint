@@ -155,6 +155,12 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/kn/LC_ME
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/kn/LC_MESSAGES/django.po
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/kn/LC_MESSAGES/djangojs.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/kn/LC_MESSAGES/djangojs.po
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ko/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ko/LC_MESSAGES/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ko/LC_MESSAGES/django.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ko/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ko/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ko/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/lv/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/lv/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/lv/LC_MESSAGES/django.mo
@@ -510,6 +516,42 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/csrf/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/csrf/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/csrf/middleware.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/csrf/middleware.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/__init__.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/datastructures.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/datastructures.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/calendars.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/calendars.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/fieldchoices.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/fieldchoices.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/objects.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/plugins/objects.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/sites.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/sites.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/base.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/calendar_day.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/calendar_homepage.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/calendar_main.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/calendar_month.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/calendar_year.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/choice_detail.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/choice_list.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/fieldchoice_detail.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/fieldchoice_homepage.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/fieldchoice_list.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/homepage.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/model_detail.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/templates/databrowse/object_detail.html
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/urls.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/urls.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/views.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/databrowse/views.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/flatpages/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/flatpages/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/flatpages/__init__.pyc
@@ -541,6 +583,13 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/humanize/tem
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/__init__.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/au/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/au/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/au/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/au/au_states.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/au/au_states.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/au/forms.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/au/forms.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/br/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/br/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/br/__init__.pyc
@@ -597,13 +646,13 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/uk/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/uk/forms.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/uk/forms.pyc
-drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/usa/
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/usa/__init__.py (EMPTY)
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/usa/__init__.pyc
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/usa/forms.py
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/usa/forms.pyc
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/usa/us_states.py
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/usa/us_states.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/us/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/us/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/us/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/us/forms.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/us/forms.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/us/us_states.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/us/us_states.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/__init__.pyc
