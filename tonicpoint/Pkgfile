@@ -1,0 +1,21 @@
+# Description: Powerpoint viewer
+# URL: http://tonicsystems.com/products/viewer/
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on: jre
+
+name=tonicpoint
+version=1.4
+release=1
+source=(http://downloads.tonicsystems.com/viewer/$name.jar)
+
+build() {
+	mkdir -p $PKG/usr/lib/$name
+	mkdir -p $PKG/usr/bin
+	
+	install -m 0644 $name.jar $PKG/usr/lib/$name/$name.jar
+	cat > $PKG/usr/bin/$name << EOF
+#!/bin/sh
+java -jar /usr/lib/tonicpoint/tonicpoint.jar
+EOF
+	chmod +x $PKG/usr/bin/$name
+}
