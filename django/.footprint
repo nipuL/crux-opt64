@@ -223,6 +223,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sl/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sl/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sl/LC_MESSAGES/django.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sl/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sl/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sl/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sr/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/sr/LC_MESSAGES/django.mo
@@ -597,6 +599,18 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/br/br_states.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/br/forms.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/br/forms.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/ch/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/ch/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/ch/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/ch/ch_states.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/ch/ch_states.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/ch/forms.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/ch/forms.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/forms.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/forms.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/de/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/de/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/de/__init__.pyc
@@ -618,6 +632,13 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/fr/forms.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/fr/fr_department.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/fr/fr_department.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/forms.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/forms.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/is_postalcodes.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/is_postalcodes.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/it/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/it/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/it/__init__.pyc
@@ -627,6 +648,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/it/it_province.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/it/it_region.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/it/it_region.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/it/util.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/it/util.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/jp/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/jp/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/jp/__init__.pyc
