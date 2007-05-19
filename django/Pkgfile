@@ -5,7 +5,7 @@
 
 name=django
 version=svn
-release=1
+release=2
 source=()
 
 build() {
@@ -17,8 +17,13 @@ build() {
 	fi
 	
 	svn export $name $SRC/$name
-	cd $SRC/$name
+
+	cd $SRC
+	wget -O list_filter.diff "http://code.djangoproject.com/attachment/ticket/3400/list_filter.3.diff?format=raw"
+
+	cd $name
 	
+	patch -p0 -i ../list_filter.diff
 	python setup.py install --root=$PKG
 	
 }
