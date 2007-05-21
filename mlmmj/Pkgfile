@@ -1,0 +1,16 @@
+# Description: Mailing List Management Made Joyful
+# URL: http://mlmmj.mmj.dk/
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on:
+
+name=mlmmj
+version=1.2.14
+release=1
+source=(http://mlmmj.mmj.dk/files/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version 
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
