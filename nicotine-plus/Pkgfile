@@ -1,0 +1,15 @@
+# Description: A client for the soulseek network
+# URL: http://nicotine.thegraveyard.org/
+# Maintainer: Christoph Sieghart, sigi at 0x2a dot at
+# Depends on: python pygtk
+
+name=nicotine-plus
+version=1.2.8
+release=1
+source=(http://dl.sf.net/$name/nicotine+-$version.tar.bz2)
+
+build() {
+   cd nicotine+-$version
+   python ./setup.py install --root=$PKG --prefix=/usr
+   chown root:root $PKG
+}
