@@ -5,9 +5,9 @@
 # Depends on:   openbox, libglade, startup-notification
 
 name=obconf
-version=1.6.3
+version=2.0.1
 release=1
-source=(http://openbox.org/$name/$name-$version.tar.gz)
+source=(http://icculus.org/openbox/$name/$name-$version.tar.gz)
 
 build () {
 	cd $name-$version
