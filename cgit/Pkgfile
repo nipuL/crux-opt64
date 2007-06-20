@@ -5,7 +5,7 @@
 # Depends on: git
 
 name=cgit
-version=0.5
+version=master
 release=1
 source=()
 
@@ -22,15 +22,15 @@ build() {
 		git clone git://git.kernel.org/pub/scm/git/git.git
 	fi
 	cp -r $name $SRC/
+	
 	cp -r git $SRC/$name/
+	cd $SRC/$name/git
+	git checkout v`prt-get printf %v --filter=git`
 	
 	cd $SRC/$name
-	git checkout v$version
 	
 	sed -i "s|/var/www/htdocs|$PKG&|" Makefile
-	sed -i 's|S_ISDIRLNK|S_ISGITLINK|g' html.c
-	sed -i 's|S_ISDIRLNK|S_ISGITLINK|g' ui-diff.c
-	sed -i 's|S_ISDIRLNK|S_ISGITLINK|g' ui-tree.c
+	sed -i "s|gen-version.sh|./&|" Makefile
 	
 	make
 	make install
