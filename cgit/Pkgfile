@@ -1,12 +1,12 @@
-# Description:
-# URL:
-# Maintainer:
-# Packager:
+# Description: Git web interface written in C
+# URL: http://hjemli.net/git/cgit/
+# Maintainer: Lucas Hazel, lucas@die.net.au
+
 # Depends on: git
 
 name=cgit
 version=master
-release=1
+release=2
 source=()
 
 build() {
@@ -18,7 +18,9 @@ build() {
 		git clone git://hjemli.net/pub/git/$name
 	fi
 	
-	if [ ! -d git ]; then
+	if [ -d git ]; then
+		(cd git; git pull)
+	else
 		git clone git://git.kernel.org/pub/scm/git/git.git
 	fi
 	cp -r $name $SRC/
@@ -28,9 +30,9 @@ build() {
 	git checkout v`prt-get printf %v --filter=git`
 	
 	cd $SRC/$name
+	git checkout $version
 	
 	sed -i "s|/var/www/htdocs|$PKG&|" Makefile
-	sed -i "s|gen-version.sh|./&|" Makefile
 	
 	make
 	make install
