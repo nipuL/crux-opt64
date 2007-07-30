@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/local/
+drwxr-xr-x	root/root	usr/local/Brother/
+drwxr-xr-x	root/root	usr/local/Brother/Printer/
+drwxr-xr-x	root/root	usr/local/Brother/Printer/dcp130c/
+drwxr-xr-x	root/root	usr/local/Brother/Printer/dcp130c/cupswrapper/
+-rwxr-xr-x	root/root	usr/local/Brother/Printer/dcp130c/cupswrapper/brcupsconfpt1
+-rwxr-xr-x	root/root	usr/local/Brother/Printer/dcp130c/cupswrapper/cupswrapperdcp130c

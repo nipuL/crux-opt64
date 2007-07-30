@@ -1,0 +1,17 @@
+# Description: CUPS wrapper for Brother DCP-130C
+# URL: http://brother.com
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on: cups dcp130clpr
+
+name=dcp130ccupswrapper
+version=1.0.0-9
+release=1
+source=(http://solutions.brother.com/Library/sol/printer/linux/rpmfiles/cups_wrapper/$name-$version.i386.rpm)
+
+build() {
+	rpm2targz *
+	tar zxf *.gz
+	sed 's|/etc/init.d|/etc/rc.d|g' \
+	  -i usr/local/Brother/Printer/dcp130c/cupswrapper/cupswrapperdcp130c
+	cp -r usr $PKG
+}
