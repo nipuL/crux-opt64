@@ -1,0 +1,18 @@
+# Description: Spellchecker for GTK
+# URL: http://gtkspell.sourceforge.net
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on: gtk aspell
+
+name=gtkspell
+version=2.0.11
+release=1
+source=(http://gtkspell.sourceforge.net/download/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--disable-nls
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share
+}
