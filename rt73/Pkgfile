@@ -1,0 +1,16 @@
+# Description: Ralink RT2571 (USB) Drivers
+# URL: http://rt2x00.serialmonkey.com
+# Maintainer: Lucas Hazel
+# Depends on:
+
+name=rt73
+version=cvs
+release=1
+source=(http://rt2x00.serialmonkey.com/$name-$version-daily.tar.gz)
+
+build() {
+	cd $name-*/Module
+	make
+	install -D ${name}.bin $PKG/lib/firmware/${name}.bin
+	install -D ${name}.ko $PKG/lib/modules/`uname -r`/extra/${name}.ko
+}

@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+-rwxr-xr-x	root/root	lib/firmware/rt73.bin
+drwxr-xr-x	root/root	lib/modules/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/extra/
+-rwxr-xr-x	root/root	lib/modules/<kernel-version>/extra/rt73.ko
