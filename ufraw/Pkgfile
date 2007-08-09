@@ -1,0 +1,17 @@
+# Description: Gimp plugin to decode raw format photo.
+# URL: http://ufraw.sourceforge.net/
+# Packager:  Wawrzyniec Niewodniczañski <wawrzek @ gmail.com>
+# Depends on: libexif, liblcms, libtiff,libjpeg
+
+name=ufraw
+version=0.10
+release=1
+source=(http://dl.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--with-libexif
+	make
+	make DESTDIR=$PKG install
+}
