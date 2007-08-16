@@ -45,10 +45,18 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ar/LC_ME
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ar/LC_MESSAGES/django.po
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ar/LC_MESSAGES/djangojs.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ar/LC_MESSAGES/djangojs.po
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bg/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bg/LC_MESSAGES/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bg/LC_MESSAGES/django.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bg/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bg/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bg/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bn/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bn/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bn/LC_MESSAGES/django.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bn/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bn/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/bn/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ca/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ca/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ca/LC_MESSAGES/django.mo
@@ -71,6 +79,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/da/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/da/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/da/LC_MESSAGES/django.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/da/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/da/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/da/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/de/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/de/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/de/LC_MESSAGES/django.mo
@@ -101,6 +111,12 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/es_AR/LC
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/es_AR/LC_MESSAGES/django.po
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/es_AR/LC_MESSAGES/djangojs.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/es_AR/LC_MESSAGES/djangojs.po
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fa/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fa/LC_MESSAGES/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fa/LC_MESSAGES/django.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fa/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fa/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fa/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fi/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fi/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/fi/LC_MESSAGES/django.mo
@@ -125,6 +141,12 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/he/LC_ME
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/he/LC_MESSAGES/django.po
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/he/LC_MESSAGES/djangojs.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/he/LC_MESSAGES/djangojs.po
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hr/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hr/LC_MESSAGES/django.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hr/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hr/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hr/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hu/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hu/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/hu/LC_MESSAGES/django.mo
@@ -207,6 +229,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ro/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ro/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ro/LC_MESSAGES/django.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ro/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ro/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ro/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ru/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ru/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/ru/LC_MESSAGES/django.mo
@@ -259,6 +283,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/uk/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/uk/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/uk/LC_MESSAGES/django.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/uk/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/uk/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/uk/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_CN/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_CN/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_CN/LC_MESSAGES/django.mo
@@ -269,6 +295,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_TW/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_TW/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_TW/LC_MESSAGES/django.mo
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_TW/LC_MESSAGES/django.po
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_TW/LC_MESSAGES/djangojs.mo
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/locale/zh_TW/LC_MESSAGES/djangojs.po
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/conf/project_template/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/project_template/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/conf/project_template/__init__.pyc
@@ -474,6 +502,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/auth/handler
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/auth/middleware.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/auth/models.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/auth/models.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/auth/tests.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/auth/tests.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/auth/views.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/auth/views.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/comments/
@@ -509,6 +539,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/comments/vie
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/contenttypes/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/contenttypes/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/contenttypes/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/contenttypes/generic.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/contenttypes/generic.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/contenttypes/management.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/contenttypes/management.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/contenttypes/models.py
@@ -609,6 +641,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/cl_regions.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/cl_regions.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/forms.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/cl/forms.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/de/
@@ -632,6 +666,13 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/fr/forms.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/fr/fr_department.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/fr/fr_department.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/in_/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/in_/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/in_/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/in_/forms.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/in_/forms.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/in_/in_states.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/in_/in_states.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/is_/__init__.pyc
@@ -664,6 +705,15 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/no/forms.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/no/no_municipalities.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/no/no_municipalities.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/forms.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/forms.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/sk_districts.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/sk_districts.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/sk_regions.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/sk/sk_regions.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/uk/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/uk/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/uk/__init__.pyc
@@ -679,11 +729,15 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/localflavor/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/models.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/models.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/templatetags/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/templatetags/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/templatetags/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/templatetags/markup.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/templatetags/markup.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/tests.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/markup/tests.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/redirects/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/redirects/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/redirects/__init__.pyc
@@ -698,6 +752,8 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/sessions/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/sessions/middleware.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/sessions/models.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/sessions/models.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/sessions/tests.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/sessions/tests.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/sitemaps/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/sitemaps/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/sitemaps/__init__.pyc
@@ -727,11 +783,15 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/lorem_ipsum.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/lorem_ipsum.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/models.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/models.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/templatetags/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/templatetags/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/templatetags/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/templatetags/webdesign.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/templatetags/webdesign.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/tests.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/contrib/webdesign/tests.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/core/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/__init__.pyc
@@ -774,8 +834,72 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/core/handlers/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/handlers/wsgi.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/mail.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/mail.pyc
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management.py
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/core/management/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/__init__.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/base.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/base.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/color.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/color.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/adminindex.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/adminindex.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/createcachetable.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/createcachetable.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/dbshell.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/dbshell.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/diffsettings.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/diffsettings.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/dumpdata.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/dumpdata.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/flush.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/flush.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/inspectdb.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/inspectdb.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/loaddata.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/loaddata.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/reset.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/reset.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/runfcgi.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/runfcgi.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/runserver.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/runserver.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/shell.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/shell.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sql.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sql.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlall.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlall.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlclear.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlclear.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlcustom.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlcustom.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlflush.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlflush.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlindexes.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlindexes.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlinitialdata.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlinitialdata.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlreset.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlreset.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlsequencereset.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/sqlsequencereset.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/startapp.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/startapp.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/startproject.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/startproject.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/syncdb.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/syncdb.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/test.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/test.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/validate.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/commands/validate.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/sql.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/sql.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/validation.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/management/validation.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/paginator.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/core/paginator.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/core/serializers/
@@ -912,8 +1036,6 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/db/models/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/db/models/fields/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/db/models/fields/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/db/models/fields/__init__.pyc
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/db/models/fields/generic.py
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/db/models/fields/generic.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/db/models/fields/related.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/db/models/fields/related.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/db/models/loading.py
@@ -1022,10 +1144,10 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/templatetags/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/test/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/_doctest.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/_doctest.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/client.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/client.pyc
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/doctest.py
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/doctest.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/signals.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/signals.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/test/simple.py
@@ -1037,6 +1159,10 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/test/
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/utils/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/_decimal.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/_decimal.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/_os.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/_os.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/_threading_local.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/_threading_local.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/autoreload.py
@@ -1061,10 +1187,14 @@ drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/utils/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/functional.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/html.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/html.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/http.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/http.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/images.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/images.pyc
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/itercompat.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/itercompat.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/maxlength.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/maxlength.pyc
 drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/django/utils/simplejson/
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/simplejson/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.5/site-packages/django/utils/simplejson/__init__.pyc
