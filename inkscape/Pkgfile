@@ -5,7 +5,7 @@
 # Depends on:  libart_lgpl boehm-gc gcc glibc gtk gtkmm libxslt pyxml popt
 
 name=inkscape
-version=0.45
+version=0.45.1
 release=1
 source=(http://dl.sourceforge.net/$name/$name-$version.tar.gz)
 
@@ -17,6 +17,6 @@ build() {
 		--disable-nls
 	make
 	make DESTDIR=$PKG install
-        rm -dr $PKG/usr/share/{man/fr,locale}
+        rm -drf $PKG/usr/share/{man/fr,locale}
 	find $PKG/usr/share -name README -exec rm -f {} \;
 }

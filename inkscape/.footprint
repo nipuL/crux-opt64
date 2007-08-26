@@ -2,6 +2,13 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/inkscape
 -rwxr-xr-x	root/root	usr/bin/inkview
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/fr/
+drwxr-xr-x	root/root	usr/man/fr/man1/
+-rw-r--r--	root/root	usr/man/fr/man1/inkscape.1
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/inkscape.1.gz
+-rw-r--r--	root/root	usr/man/man1/inkview.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/inkscape.desktop
@@ -252,6 +259,7 @@ drwxr-xr-x	root/root	usr/share/inkscape/templates/
 -rw-r--r--	root/root	usr/share/inkscape/templates/default.lt.svg
 -rw-r--r--	root/root	usr/share/inkscape/templates/default.pl.svg
 -rw-r--r--	root/root	usr/share/inkscape/templates/default.pt_BR.svg
+-rw-r--r--	root/root	usr/share/inkscape/templates/default.sk.svg
 -rw-r--r--	root/root	usr/share/inkscape/templates/default.svg
 -rw-r--r--	root/root	usr/share/inkscape/templates/default_mm.svg
 -rw-r--r--	root/root	usr/share/inkscape/templates/default_pt.svg
@@ -355,9 +363,5 @@ drwxr-xr-x	root/root	usr/share/inkscape/ui/
 -rw-r--r--	root/root	usr/share/inkscape/ui/toolbox.xml
 -rw-r--r--	root/root	usr/share/inkscape/ui/units.txt
 -rw-r--r--	root/root	usr/share/inkscape/ui/units.xml
-drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man1/
--rw-r--r--	root/root	usr/share/man/man1/inkscape.1.gz
--rw-r--r--	root/root	usr/share/man/man1/inkview.1.gz
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/inkscape.png
