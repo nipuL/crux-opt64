@@ -1,0 +1,15 @@
+# Description: Another fast cairo-based theme engine for gtk
+# URL:         http://cimi.netsons.org/pages/murrine.php
+# Maintainer:  Vincenzo Colosimo, vico at bicisport dot de
+# Depends on:  gtk
+
+source=(http://cimi.netsons.org/media/download_gallery/murrine/murrine-$version.tar.bz2)
+
+build() {
+    cd murrine-$version
+    ./configure --prefix=/usr \
+	--libdir=/usr/lib32 \
+	--enable-animation
+    make
+    make DESTDIR=$PKG install
+}
