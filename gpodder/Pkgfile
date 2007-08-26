@@ -1,0 +1,17 @@
+# Description: gPodder is a Podcast reciever/catcher written in Python, using GTK
+# URL: http://perli.net/projekte/gpodder/
+# Packager: Lucas Hazel <lucas@die.net.au>
+# Maintainer: Mattias Hedenskog <mattias@hedenskog.se>
+# Depends on: python, gtk, pygtk, pyxml, imagemagick
+
+name=gpodder
+version=0.9.4
+release=1
+source=(http://download.berlios.de/$name/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    sed -i -e "s|share/man/man1|man/man1|" setup.py
+    make DESTDIR=$PKG install
+    rm -rf $PKG/usr/share/locale/
+}
