@@ -1,0 +1,15 @@
+# Description: Python bindings for PostgreSQL
+# URL: 
+# Maintainer:
+# Packager:
+# Depends on: python postgresql
+
+name=psycopg2
+version=2.0.6
+release=1
+source=(http://www.initd.org/pub/software/psycopg/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	python setup.py install --root=$PKG --prefix=/usr
+}
