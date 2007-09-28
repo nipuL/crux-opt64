@@ -4,7 +4,7 @@
 # Depends on:  gtk
 
 name=gtk-engines-murrine
-version=0.53
+version=0.53.1
 release=1
 source=(http://cimi.netsons.org/media/download_gallery/murrine/murrine-$version.tar.bz2 \
         http://cimi.netsons.org/media/download_gallery/MurrineThemePack.tar.bz2)
