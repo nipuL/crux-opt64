@@ -26,12 +26,12 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gtk-engines/
 -rw-r--r--	root/root	usr/share/gtk-engines/clearlooks.xml
--rw-r--r--	root/root	usr/share/gtk-engines/crux.xml
+-rw-r--r--	root/root	usr/share/gtk-engines/crux-engine.xml
 -rw-r--r--	root/root	usr/share/gtk-engines/glide.xml
--rw-r--r--	root/root	usr/share/gtk-engines/hc.xml
+-rw-r--r--	root/root	usr/share/gtk-engines/hcengine.xml
 -rw-r--r--	root/root	usr/share/gtk-engines/industrial.xml
 -rw-r--r--	root/root	usr/share/gtk-engines/mist.xml
--rw-r--r--	root/root	usr/share/gtk-engines/redmond.xml
+-rw-r--r--	root/root	usr/share/gtk-engines/redmond95.xml
 -rw-r--r--	root/root	usr/share/gtk-engines/smooth.xml
 -rw-r--r--	root/root	usr/share/gtk-engines/thinice.xml
 drwxr-xr-x	root/root	usr/share/themes/
@@ -50,8 +50,6 @@ drwxr-xr-x	root/root	usr/share/themes/Mist/gtk-2.0/
 drwxr-xr-x	root/root	usr/share/themes/Redmond/
 drwxr-xr-x	root/root	usr/share/themes/Redmond/gtk-2.0/
 -rw-r--r--	root/root	usr/share/themes/Redmond/gtk-2.0/gtkrc
-drwxr-xr-x	root/root	usr/share/themes/Redmond/gtk/
--rw-r--r--	root/root	usr/share/themes/Redmond/gtk/gtkrc
 drwxr-xr-x	root/root	usr/share/themes/ThinIce/
 drwxr-xr-x	root/root	usr/share/themes/ThinIce/gtk-2.0/
 -rw-r--r--	root/root	usr/share/themes/ThinIce/gtk-2.0/gtkrc
