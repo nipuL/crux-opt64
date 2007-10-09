@@ -1,0 +1,14 @@
+# Description: Zope3 interface library
+# URL: http://www.zope.org/Products/ZopeInterface
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: python
+
+name=zopeinterface
+version=3.3.0
+release=1
+source=(http://www.zope.org/Products/ZopeInterface/$version/zope.interface-$version.tar.gz)
+
+build() {
+	cd zope.interface-$version
+	python setup.py install --root=$PKG --prefix=/usr
+}
