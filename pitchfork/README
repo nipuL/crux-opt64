@@ -1,0 +1,16 @@
+PRE-INSTALL:
+
+This is the install process for apache, if you use a different webserver you can 
+figure it out on your own...
+
+Give apache write permissions to the config folder:
+
+	# chown www:www /var/www/pitchfork/config
+
+Add the following line to /etc/apache/httpd.conf:
+
+	Include /etc/apache/extra/pitchfork.conf
+
+Make any required changes to pitchfork.conf, then restart apache.
+You can then verify it works by connecting to http://localhost/pitchfork/
+
