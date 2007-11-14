@@ -1,0 +1,19 @@
+# Description: Web based AJAX MPD Client
+# URL: http://pitchfork.remiss.org/
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: mpd pear
+
+name=pitchfork
+version=0.5.4
+release=1
+source=(http://pitchfork.remiss.org/files/$name-$version.tar.bz2)
+
+build() {
+        mkdir -p $PKG/var/www
+        cp -r $name-$version $PKG/var/www/$name
+        
+        mkdir -p $PKG/etc/apache/extra
+        cp $name-$version/doc/$name.conf $PKG/etc/apache/extra/
+        
+        rm -rf $PKG/var/www/$name/{ChangeLog,COPYING,CREDITS,doc,README}
+}
