@@ -1,0 +1,29 @@
+# Description: GTK Git Frontend
+# URL: http://developer.imendio.com/projects/giggle
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: git, gtksourceview1, libglade
+
+name=giggle
+version=1
+release=1
+source=()
+
+build() {
+        GIT_URL=git://git.imendio.com/projects/giggle.git
+        cd $PKGMK_SOURCE_DIR
+        if [ ! -d $name ]; then
+                git clone $GIT_URL
+        else
+                (cd $name; git pull)
+        fi
+        
+        cd $SRC
+        git clone $PKGMK_SOURCE_DIR/$name/.git
+        cd $name
+        
+        sed -i 's/-1.9//g' autogen.sh
+        ./autogen.sh --prefix=/usr
+        
+        make
+        make DESTDIR=$PKG install
+}
