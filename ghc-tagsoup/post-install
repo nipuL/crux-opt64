@@ -1,0 +1,31 @@
+#!/bin/sh
+
+echo 'name: tagsoup
+version: 0.1
+license: BSD3
+copyright:
+maintainer:
+stability:
+homepage: http://www-users.cs.york.ac.uk/~ndm/projects/libraries.php
+package-url:
+description:
+category:
+author: Neil Mitchell
+exposed: True
+exposed-modules: Data.Html.TagSoup Data.Html.Download
+hidden-modules:
+import-dirs: /usr/lib/ghc-6.8.1/lib/tagsoup-0.1
+library-dirs: /usr/lib/ghc-6.8.1/lib/tagsoup-0.1
+hs-libraries: HStagsoup-0.1
+extra-libraries:
+extra-ghci-libraries:
+include-dirs:
+includes:
+depends: base-3.0.0.0 network-2.1.0.0
+hugs-options:
+cc-options:
+ld-options:
+framework-dirs:
+frameworks:
+haddock-interfaces: /usr/share/doc/tagsoup-0.1/html/tagsoup.haddock
+haddock-html: /usr/share/doc/tagsoup-0.1/html' | /usr/bin/ghc-pkg update -

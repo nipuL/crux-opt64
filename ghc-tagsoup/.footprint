@@ -1,0 +1,11 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/ghc-6.8.1/
+drwxr-xr-x	root/root	usr/lib/ghc-6.8.1/lib/
+drwxr-xr-x	root/root	usr/lib/ghc-6.8.1/lib/tagsoup-0.1/
+drwxr-xr-x	root/root	usr/lib/ghc-6.8.1/lib/tagsoup-0.1/Data/
+drwxr-xr-x	root/root	usr/lib/ghc-6.8.1/lib/tagsoup-0.1/Data/Html/
+-rw-r--r--	root/root	usr/lib/ghc-6.8.1/lib/tagsoup-0.1/Data/Html/Download.hi
+-rw-r--r--	root/root	usr/lib/ghc-6.8.1/lib/tagsoup-0.1/Data/Html/TagSoup.hi
+-rw-r--r--	root/root	usr/lib/ghc-6.8.1/lib/tagsoup-0.1/HStagsoup-0.1.o
+-rw-r--r--	root/root	usr/lib/ghc-6.8.1/lib/tagsoup-0.1/libHStagsoup-0.1.a

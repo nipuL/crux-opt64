@@ -1,0 +1,18 @@
+# Description: Parsing and extracting information from (possibly malformed) HTML documents
+# URL: http://www-users.cs.york.ac.uk/~ndm/tagsoup/
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: ghc
+
+name=ghc-tagsoup
+distname=tagsoup
+version=0.1
+release=1
+source=(http://hackage.haskell.org/packages/archive/$distname/$version/$distname-$version.tar.gz)
+
+build() {
+	cd $distname-$version
+	runghc Setup.hs configure --prefix=/usr --libsubdir='$compiler/lib/$pkgid'
+	runghc Setup.hs build
+	runghc Setup.hs copy --destdir=$PKG
+	rm -rf $PKG/usr/share
+}
