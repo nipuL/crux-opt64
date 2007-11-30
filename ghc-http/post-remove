@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/bin/ghc-pkg unregister HTTP-3001.0.2
