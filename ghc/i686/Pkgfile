@@ -1,0 +1,6 @@
+# Arch: i686
+# Arch Maintainer: Lucas Hazel <lucas@die.net.au>
+
+if [ -z "`pkginfo -i | cut -d' ' -f1 | grep ^ghc$`" ]; then
+	source=(http://www.haskell.org/ghc/dist/$version/$name-$version-i386-unknown-linux.tar.bz2)
+fi
