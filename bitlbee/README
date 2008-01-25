@@ -1,0 +1,18 @@
+POST-INSTALL:
+
+to run an own bitlbee server add the following line to your inetd.conf:
+
+6667 stream tcp nowait nobody /usr/sbin/tcpd /usr/sbin/bitlbee
+
+Creating a special BitlBee user and running BitlBee with that UID (instead
+of just 'nobody') might be a good idea.
+
+Bitlbee stores it's config by default in the directory: /var/lib/bitlbee which
+should be created and be owned by nobody (but this task will be carried out
+by the post-install script, too).
+
+there are also public bitlbee servers available at (use with caution):
+http://www.bitlbee.org/main.php/servers.html
+
+if you connect to a server the first time, simply follow the instructions of
+root.
