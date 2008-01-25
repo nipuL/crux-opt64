@@ -1,0 +1,23 @@
+# Description:
+# URL:
+# Maintainer: Antonio SJ Musumeci, bile at landofbile dot com
+# Packager:
+# Depends on:
+
+name=docbook-xsl
+version=1.72.0
+release=1
+source=(http://dl.sf.net/sourceforge/docbook/$name-$version.tar.gz)
+
+build()
+{
+    cd $name-$version
+
+    mkdir -p $PKG/usr/share/xml/docbook
+    for x in $(find -mindepth 1 -maxdepth 1 -type d)
+    do
+      cp -ar $x $PKG/usr/share/xml/docbook/
+    done
+
+    install -m644 -D VERSION $PKG/usr/share/xml/docbook/VERSION
+}
