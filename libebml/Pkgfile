@@ -1,0 +1,16 @@
+# Maintainer: Brett Goulder <predatorfreak@dcaf-security.org>
+# Description: library for mkvtoolnix
+# URL: http://www.bunkus.org/videotools/mkvtoolnix/
+
+name=libebml
+version=0.7.7
+release=1
+source="http://dl.matroska.org/downloads/libebml/libebml-$version.tar.bz2"
+
+build()
+{
+    cd $name-$version
+    cd make/linux
+    make
+    make -e prefix=$PKG/usr install
+}
