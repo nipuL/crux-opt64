@@ -1,0 +1,15 @@
+# Description: XSL tool chain frontend
+# URL: http://cyberelk.net/tim/software/xmlto/
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on: libxslt docbook-xsl
+
+name=xmlto
+version=0.0.18
+release=1
+source=(http://cyberelk.net/tim/data/xmlto/stable/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make DESTDIR=$PKG install
+}

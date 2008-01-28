@@ -1,0 +1,18 @@
+#!/bin/sh
+
+. $(dirname $(pwd)/$0)/Pkgfile
+
+if [ ! -f /etc/xml/catalog ]
+then
+    mkdir -p /etc/xml; xmlcatalog --noout --create /etc/xml/catalog;
+fi &&
+if [ ! -e /etc/xml/docbook ]
+then
+    xmlcatalog --noout --create /etc/xml/docbook;
+fi &&
+xmlcatalog --noout --add "rewriteSystem" "http://docbook.sourceforge.net/release/xsl/$version" "/usr/share/xml/docbook" /etc/xml/catalog &&
+xmlcatalog --noout --add "rewriteURI" "http://docbook.sourceforge.net/release/xsl/$version" "/usr/share/xml/docbook" /etc/xml/catalog &&
+xmlcatalog --noout --add "rewriteSystem" "http://docbook.sourceforge.net/release/xsl/current" "/usr/share/xml/docbook" /etc/xml/catalog &&
+xmlcatalog --noout --add "rewriteURI" "http://docbook.sourceforge.net/release/xsl/current" "/usr/share/xml/docbook" /etc/xml/catalog &&
+xmlcatalog --noout --add "delegateSystem" "http://docbook.sourceforge.net/release/xsl/" "file:///etc/xml/docbook" /etc/xml/catalog &&
+xmlcatalog --noout --add "delegateURI" "http://docbook.sourceforge.net/release/xsl/" "file:///etc/xml/docbook" /etc/xml/catalog

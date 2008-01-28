@@ -1,0 +1,17 @@
+# Maintainer: Richard Pöttler, richard dot poettler at gmail dot com
+# Description: an irc to other chat networks gateway
+# URL: http://www.bitlbee.org/
+# Depends on: 
+
+name=bitlbee
+version=1.0.4
+release=2
+source=(http://get.bitlbee.org/src/$name-$version.tar.gz)
+
+build () {
+	cd $name-$version
+	./configure --prefix=/usr --mandir=/usr/man --ssl=openssl
+	make
+	make DESTDIR=$PKG install
+	make DESTDIR=$PKG install-etc
+}
