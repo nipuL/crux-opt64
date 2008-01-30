@@ -1,0 +1,15 @@
+# Description: PDF library to  create or automate complex (even data-driven) documents
+# URL: http://www.reportlab.org/index.html
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Packager: Younes Hafri <ycrux@club-internet.fr>
+# Depends on: python
+
+name=reportlab
+version=2.1
+release=1
+source=(http://www.$name.org/ftp/ReportLab_2_1.tgz)
+
+build () {
+	cd ${name}_2_1/$name
+	python setup.py install --root=$PKG
+}
