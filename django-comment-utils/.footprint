@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/python2.5/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils-0.3p1-py2.5.egg-info
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/comment_utils/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/managers.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/managers.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/moderation.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/moderation.pyc
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/comment_utils/templatetags/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/templatetags/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/templatetags/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/templatetags/comment_utils.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/comment_utils/templatetags/comment_utils.pyc
