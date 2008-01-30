@@ -1,7 +1,7 @@
 # Description: RML to PDF converter
 # URL: http://www.openreport.org/index.py/static/page/trml2pdf
 # Maintainer: Lucas Hazel <lucas@die.net.au>
-# Depends on: python
+# Depends on: reportlab
 
 name=trml2pdf
 version=20080130
