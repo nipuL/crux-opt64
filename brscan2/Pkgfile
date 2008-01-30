@@ -1,0 +1,18 @@
+# Description:
+# URL:
+# Maintainer:
+# Packager:
+# Depends on:
+
+name=brscan2
+version=0.2.4
+release=1
+source=(http://solutions.brother.com/Library/sol/printer/linux/rpmfiles/sane_others/64bit/$name-$version-0.x86_64.rpm)
+
+build() {
+	rpm2targz *
+	tar zxf *.gz
+	mv usr $PKG
+	mv $PKG/usr/lib64 $PKG/usr/lib
+}
+

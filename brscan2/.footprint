@@ -1,0 +1,28 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/brsaneconfig2 -> /usr/local/Brother/sane/brsaneconfig2
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libbrcolm2.so -> /usr/lib64/libbrcolm2.so.1
+lrwxrwxrwx	root/root	usr/lib/libbrcolm2.so.1 -> /usr/lib64/libbrcolm2.so.1.0.1
+-rwxr-xr-x	root/root	usr/lib/libbrcolm2.so.1.0.1
+lrwxrwxrwx	root/root	usr/lib/libbrscandec2.so -> /usr/lib64/libbrscandec2.so.1
+lrwxrwxrwx	root/root	usr/lib/libbrscandec2.so.1 -> /usr/lib64/libbrscandec2.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libbrscandec2.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/sane/
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-brother2.so -> /usr/lib64/sane/libsane-brother2.so.1
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-brother2.so.1 -> /usr/lib64/sane/libsane-brother2.so.1.0.7
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-brother2.so.1.0.7
+drwxr-xr-x	root/root	usr/local/
+drwxr-xr-x	root/root	usr/local/Brother/
+drwxr-xr-x	root/root	usr/local/Brother/sane/
+-rw-r--r--	root/root	usr/local/Brother/sane/Brsane2.ini
+drwxr-xr-x	root/root	usr/local/Brother/sane/GrayCmData/
+drwxr-xr-x	root/root	usr/local/Brother/sane/GrayCmData/AL/
+-rw-r--r--	root/root	usr/local/Brother/sane/GrayCmData/AL/brmsl09f.cm
+drwxr-xr-x	root/root	usr/local/Brother/sane/GrayCmData/ALL/
+-rw-r--r--	root/root	usr/local/Brother/sane/GrayCmData/ALL/brmsl08f.cm
+-rwxr-xr-x	root/root	usr/local/Brother/sane/brsaneconfig2
+-rw-r--r--	root/root	usr/local/Brother/sane/brsanenetdevice2.cfg
+drwxr-xr-x	root/root	usr/local/Brother/sane/models2/
+-rw-r--r--	root/root	usr/local/Brother/sane/models2/ext1.ini
+-rwxr-xr-x	root/root	usr/local/Brother/sane/setupSaneScan2
