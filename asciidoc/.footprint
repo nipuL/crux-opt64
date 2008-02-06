@@ -19,7 +19,6 @@ drwxr-xr-x	root/root	etc/asciidoc/filters/
 -rw-r--r--	root/root	etc/asciidoc/html4.conf
 drwxr-xr-x	root/root	etc/asciidoc/images/
 drwxr-xr-x	root/root	etc/asciidoc/images/icons/
--rw-r--r--	root/root	etc/asciidoc/images/icons/README
 drwxr-xr-x	root/root	etc/asciidoc/images/icons/callouts/
 -rw-r--r--	root/root	etc/asciidoc/images/icons/callouts/1.png
 -rw-r--r--	root/root	etc/asciidoc/images/icons/callouts/10.png
@@ -48,7 +47,9 @@ drwxr-xr-x	root/root	etc/asciidoc/images/icons/callouts/
 -rw-r--r--	root/root	etc/asciidoc/images/icons/warning.png
 drwxr-xr-x	root/root	etc/asciidoc/javascripts/
 -rw-r--r--	root/root	etc/asciidoc/javascripts/ASCIIMathML.js
+-rw-r--r--	root/root	etc/asciidoc/javascripts/LaTeXMathML.js
 -rw-r--r--	root/root	etc/asciidoc/javascripts/toc.js
+-rw-r--r--	root/root	etc/asciidoc/lang-es.conf
 -rw-r--r--	root/root	etc/asciidoc/latex.conf
 -rw-r--r--	root/root	etc/asciidoc/linuxdoc.conf
 drwxr-xr-x	root/root	etc/asciidoc/stylesheets/

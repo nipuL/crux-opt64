@@ -1,10 +1,10 @@
 # Description: Text document formatter
 # URL: http://methods.co.nz/asciidoc
-# Maintainer: Lucas Hazel, lucas@die.net.au
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: python
 
 name=asciidoc
-version=8.2.1
+version=8.2.5
 release=1
 source=(http://www.methods.co.nz/$name/$name-$version.tar.gz)
 
@@ -16,4 +16,5 @@ build() {
 		-e 's|/etc/asciidoc|$PKG&|' \
 		-e 's|VIM_CONFDIR=.*|VIM_CONFDIR=$PKG/usr/share/vim|' -i install.sh
 	./install.sh
+	rm $PKG/etc/asciidoc/images/icons/README
 }
