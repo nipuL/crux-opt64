@@ -1,0 +1,17 @@
+# Description: RML to PDF converter
+# URL: http://www.openreport.org/index.py/static/page/trml2pdf
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: reportlab
+
+name=trml2pdf
+version=20080130
+release=1
+source=(http://tinyforge.org/frs/download.php/1/$name.tar.gz)
+
+build() {
+	LIB_PATH=/usr/lib/python2.5/site-packages/$name
+	cd $name
+	mkdir -p $PKG/$LIB_PATH $PKG/usr/bin
+	cp -r $name/* $PKG/$LIB_PATH
+	ln -s $LIB_PATH/$name.py $PKG/usr/bin/$name
+}

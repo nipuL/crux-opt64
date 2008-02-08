@@ -1,0 +1,85 @@
+=== modified file 'django/contrib/admin/views/main.py'
+--- django/contrib/admin/views/main.py	2007-02-16 12:21:25 +0000
++++ django/contrib/admin/views/main.py	2007-02-16 13:06:40 +0000
+@@ -8,7 +8,7 @@
+ from django.core.paginator import ObjectPaginator, InvalidPage
+ from django.shortcuts import get_object_or_404, render_to_response
+ from django.db import models
+-from django.db.models.query import handle_legacy_orderlist, QuerySet
++from django.db.models.query import handle_legacy_orderlist, QuerySet, LOOKUP_SEPARATOR
+ from django.http import Http404, HttpResponse, HttpResponseRedirect
+ from django.utils.html import escape
+ from django.utils.text import capfirst, get_text_list
+@@ -543,6 +543,24 @@
+                                "admin/object_history.html"], extra_context, context_instance=template.RequestContext(request))
+ history = staff_member_required(never_cache(history))
+ 
++class FollowForeignKey(object):
++    """
++    A class to represent a ForeignKey that spans multiple foreign keys
++    over multiple model classes.
++    """
++    def __init__(self, field, lookups):
++        # Traverse the relationships to reach the final model class.
++        for field_name in lookups[1:]:
++            model = field.rel.to
++            new_field = model._meta.get_field(field_name)
++            if not new_field.rel: break
++            field = new_field
++        self.verbose_name = field.verbose_name
++        self.rel = field.rel
++        # Rejoin the lookups using the separator so that the
++        # RelatedFilterSpec uses the correct lookup_kwarg.
++        self.name = LOOKUP_SEPARATOR.join(lookups)
++
+ class ChangeList(object):
+     def __init__(self, request, model):
+         self.model = model
+@@ -574,9 +592,13 @@
+     def get_filters(self, request):
+         filter_specs = []
+         if self.lookup_opts.admin.list_filter and not self.opts.one_to_one_field:
+-            filter_fields = [self.lookup_opts.get_field(field_name) \
+-                              for field_name in self.lookup_opts.admin.list_filter]
+-            for f in filter_fields:
++            for field_name in self.lookup_opts.admin.list_filter:
++                field_lookups = field_name.split(LOOKUP_SEPARATOR)
++                f = self.lookup_opts.get_field(field_lookups[0])
++                # If the field name spans multiple models, wrap the field in a
++                # FollowForeignKey.
++                if len(field_lookups) > 1 and f.rel:
++                    f = FollowForeignKey(f, field_lookups)
+                 spec = FilterSpec.create(f, request, self.params, self.model)
+                 if spec and spec.has_output():
+                     filter_specs.append(spec)
+
+=== modified file 'django/core/management/validation.py'
+--- django/core/management/validation.py        (revision 5903)
++++ django/core/management/validation.py        (working copy)
+@@ -21,6 +21,7 @@
+     from django.db import models, connection
+     from django.db.models.loading import get_app_errors
+     from django.db.models.fields.related import RelatedObject
++    from django.db.models.query import LOOKUP_SEPARATOR
+ 
+     e = ModelErrorCollection(outfile)
+
+@@ -170,8 +171,17 @@
+                     e.add(opts, '"admin.list_filter", if given, must be set to a list or tuple.')
+                 else:
+                     for fn in opts.admin.list_filter:
++                        field_lookups = fn.split(LOOKUP_SEPARATOR)
+                         try:
+-                            f = opts.get_field(fn)
++                            f = opts.get_field(field_lookups[0])
++                            if len(field_lookups) > 1:
++                               if not f.rel:
++                                       e.add(opts, '"admin.list_filter" refers to %r which containts a non-related field.' % fn)
++                               for field_name in field_lookups[1:]:
++                                       model = f.rel.to
++                                       f = model._meta.get_field(field_name)
++                                       if not f.rel:
++                                               e.add(opts, '"admin.list_filter" refers to %r which containts a non-related field.' % fn)
+                         except models.FieldDoesNotExist:
+                             e.add(opts, '"admin.list_filter" refers to %r, which isn\'t a field.' % fn)
+                 # date_hierarchy

@@ -1,0 +1,14 @@
+# Description: Registration module for django
+# URL: http://code.google.com/p/django-registration/
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: django
+
+name=django-registration
+version=0.4p1
+release=1
+source=(http://django-registration.googlecode.com/files/registration-$version.tar.gz)
+
+build() {
+	cd registration-$version
+	python setup.py install --root=$PKG
+}

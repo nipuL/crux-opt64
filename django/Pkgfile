@@ -1,0 +1,26 @@
+# Description: Web framework written in python
+# URL: http://djangoproject.com
+# Maintainer: Lucas Hazel, lucas@die.net.au
+# Depends on: subversion setuptools
+
+name=django
+version=svn
+release=3
+source=($name-list_filter.diff)
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ -d $name ]; then
+		(cd $name;svn up)
+	else
+		svn co http://code.djangoproject.com/svn/django/trunk/ $name
+	fi
+	
+	svn export $name $SRC/$name
+
+	cd $SRC/$name
+	patch -p0 -i $SRC/$name-list_filter.diff
+
+	python setup.py install --root=$PKG
+	
+}

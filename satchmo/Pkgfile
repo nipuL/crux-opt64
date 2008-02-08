@@ -1,0 +1,22 @@
+# Description: e-commerce framework for django
+# URL: http://www.satchmoproject.com
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: django, pil, pycrypto, trml2pdf
+
+name=satchmo
+version=svn
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ -d $name ]; then
+		(cd $name; svn up)
+	else
+		svn co svn://satchmoproject.com/$name/trunk $name
+	fi
+	svn export $name $SRC/$name
+	cd $SRC/$name
+	
+	python setup.py install --root=$PKG
+}

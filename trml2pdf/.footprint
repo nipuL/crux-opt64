@@ -1,0 +1,13 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/trml2pdf -> /usr/lib/python2.5/site-packages/trml2pdf/trml2pdf.py
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/python2.5/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/trml2pdf/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/trml2pdf/__init__.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/trml2pdf/color.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/trml2pdf/color.pyc
+-rwxr-xr-x	root/root	usr/lib/python2.5/site-packages/trml2pdf/trml2pdf.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/trml2pdf/utils.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/trml2pdf/utils.pyc
