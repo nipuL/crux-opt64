@@ -1,6 +1,6 @@
 # Description: GTK+ interface builder
 # URL: http://glade.gnome.org
-# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: gtk
 
 name=glade3

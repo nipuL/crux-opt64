@@ -1,6 +1,7 @@
 # Description: a GTK based pdf viewer
 # URL: http://www.emma-soft.com/projects/epdfview
-# Maintainer: Antonio SJ Musumeci <bile@landofbile.com>
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Maintainer: Antonio SJ Musumeci, bilei at landofbilei dot com
 # Depends on: poppler
 
 name=epdfview

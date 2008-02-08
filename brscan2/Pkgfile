@@ -1,8 +1,6 @@
-# Description:
-# URL:
-# Maintainer:
-# Packager:
-# Depends on:
+# Description: SANE Drivers for Brother Scanners
+# URL: http://solutions.brother.com/linux/sol/printer/linux/sane_drivers.html
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=brscan2
 version=0.2.4

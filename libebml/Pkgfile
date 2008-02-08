@@ -1,6 +1,7 @@
-# Maintainer: Brett Goulder <predatorfreak@dcaf-security.org>
 # Description: library for mkvtoolnix
 # URL: http://www.bunkus.org/videotools/mkvtoolnix/
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Packager: Brett Goulder, predatorfreaki at dcaf-security dot org
 
 name=libebml
 version=0.7.7

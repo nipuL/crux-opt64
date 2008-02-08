@@ -1,6 +1,6 @@
 # Description: Linux drivers for the IC Plus 1000A NIC
 # URL: http://www.icplus.com.tw/pp-IP1000A.html
-# Maintainer: Lucas Hazel, lucas@die.net.au
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=ipg
 version=2.09f

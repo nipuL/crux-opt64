@@ -1,6 +1,6 @@
 # Description: Haskell compiler
 # URL: http://www.haskell.org/haskellwiki/Glasgow_Haskell_Compiler
-# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: libgmp
 
 name=ghc

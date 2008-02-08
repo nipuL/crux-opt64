@@ -1,6 +1,6 @@
 # Description: Syntax highlighting for the GtkTextView widget
 # URL: http://gtksourceview.sf.net
-# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: gtk, libxml2, libgnomeprint
 
 name=gtksourceview1

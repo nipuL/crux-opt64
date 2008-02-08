@@ -1,6 +1,6 @@
 # Description: LPR filter for the Brother DCP-130C
 # URL: http://brother.com
-# Maintainer: Lucas Hazel, lucas@die.net.au
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: cups
 
 name=dcp130clpr

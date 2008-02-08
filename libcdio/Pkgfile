@@ -1,7 +1,7 @@
 # Description: Compact Disc Input and Control Library
 # URL: http://www.gnu.org/software/libcdio/
-# Maintainer: Hannes Mayer, kontakt at ecarux de
-# Depends on: 
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Packager: Hannes Mayer, kontakt at ecarux de
 
 name=libcdio
 version=0.78.2
@@ -14,5 +14,5 @@ build() {
     	make 
     	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/info/
+	rm -rf $PKG/usr/{info,man/jp}
 }

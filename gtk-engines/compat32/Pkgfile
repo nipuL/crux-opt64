@@ -1,6 +1,6 @@
 # Port: gtk-engines
 # Arch: compat32
-# Arch Maintainer: Lucas Hazel, lucas@die.net.au
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Arch Depends: gtk@compat32
 
 build() {

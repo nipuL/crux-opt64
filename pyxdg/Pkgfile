@@ -1,6 +1,6 @@
 # Description: Python bindings for the XDG specification
 # URL: http://freedesktop.org/wiki/Software_2fpyxdg
-# Maintainer: Lucas Hazel, lucas@die.net.au
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: python
 
 name=pyxdg

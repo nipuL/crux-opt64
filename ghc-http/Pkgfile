@@ -1,6 +1,6 @@
 # Description: A library for client-side HTTP
 # URL: http://www.haskell.org/http/
-# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: ghc
 
 name=ghc-http

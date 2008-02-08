@@ -1,6 +1,6 @@
 # Description: Python bindings for sqlite
 # URL: http://www.initd.org/tracker/pysqlite/wiki/pysqlite
-# Maintainer: Lucas Hazel, lucas@die.net.au
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: python, sqlite3
 
 name=pysqlite

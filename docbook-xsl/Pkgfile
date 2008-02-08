@@ -1,11 +1,10 @@
-# Description:
-# URL:
-# Maintainer: Antonio SJ Musumeci, bile at landofbile dot com
-# Packager:
-# Depends on:
+# Description: DockBook XSL Stylesheets
+# URL: http://docbook.sourceforge.net
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Packager: Antonio SJ Musumeci, bile at landofbile dot com
 
 name=docbook-xsl
-version=1.72.0
+version=1.73.2
 release=1
 source=(http://dl.sf.net/sourceforge/docbook/$name-$version.tar.gz)
 
@@ -20,4 +19,6 @@ build()
     done
 
     install -m644 -D VERSION $PKG/usr/share/xml/docbook/VERSION
+
+	rm $PKG/usr/share/xml/docbook/manpages/ChangeLog*
 }

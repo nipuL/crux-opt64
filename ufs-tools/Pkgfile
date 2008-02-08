@@ -1,6 +1,6 @@
 # Description: UFS tools
 # URL: http://ufs-linux.sourceforge.net/
-# Maintainer: Lucas Hazel, lucas@die.net.au
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=ufs-tools
 version=0.1

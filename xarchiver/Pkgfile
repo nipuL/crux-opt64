@@ -1,6 +1,6 @@
 # Description: universal frontend to packagers
 # URL:         http://xarchiver.xfce.org/
-# Maintainer:  Lucas Hazel, lucas@die.net.au
+# Maintainer:  Lucas Hazel, lucas at die dot net dot au
 # Packager:    Han Boetes <han@mijncomputer.nl>
 # Depends on:  gtk
 

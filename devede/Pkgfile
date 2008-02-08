@@ -1,8 +1,7 @@
-# $Id: $
 # Description: A program to create video DVDs suitables for home players
 # URL: http://www.rastersoft.com/programas/devede.html
-# Maintainer: Younes Hafri <ycrux@club-internet.fr>
-# Packager: Younes Hafri <ycrux@club-internet.fr>
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Packager: Younes Hafri, ycruxi at club-internet dot fr
 # Depends on: pygtk, dvdauthor
 
 name=devede

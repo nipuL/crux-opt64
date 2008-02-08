@@ -1,6 +1,6 @@
 # Description: Parsing and extracting information from (possibly malformed) HTML documents
 # URL: http://www-users.cs.york.ac.uk/~ndm/tagsoup/
-# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: ghc
 
 name=ghc-tagsoup

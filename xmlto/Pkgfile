@@ -1,6 +1,6 @@
 # Description: XSL tool chain frontend
 # URL: http://cyberelk.net/tim/software/xmlto/
-# Maintainer: Lucas Hazel, lucas@die.net.au
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: libxslt docbook-xsl
 
 name=xmlto

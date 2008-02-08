@@ -1,6 +1,6 @@
 # Description: OpenBox Menu Editor
 # URL: http://obmenu.sourceforge.net
-# Maintainer: Lucas Hazel, lucas@die.net.au
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: libglade, pygtk
 
 name=obmenu

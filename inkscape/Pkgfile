@@ -17,6 +17,6 @@ build() {
 		--disable-nls
 	make
 	make DESTDIR=$PKG install
-        rm -drf $PKG/usr/share/{man/fr,locale}
-	find $PKG/usr/share -name README -exec rm -f {} \;
+        rm -drf $PKG/usr/{share/locale,man/fr}
+	find $PKG/usr/share -name 'README*' -exec rm -f {} \;
 }
