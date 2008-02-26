@@ -1,6 +1,6 @@
 # Description: IN/MDF/PDI/CDI/NRG/B5I image to ISO image file converter
 # URL:	       http://mdf2iso.berlios.de
-# Packager:    Brett Goulder, predatorfreak at dcaf-security dot org
+# Packager:    Lucas Hazel, lucas at die dot net dot au
 # Maintainer:  Nathan Pardoe, lithium at poolofrandomness dot com
 
 name=iat
