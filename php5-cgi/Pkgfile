@@ -1,0 +1,30 @@
+# Description: CGI version of php5 with fastcgi support
+# URL: http://www.php.net/
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: mysql, libxml2, libgd
+
+name=php5-cgi
+version=5.2.5
+release=1
+source=(http://www.php.net/distributions/php-$version.tar.bz2 php.rc) 
+
+build () {
+	cd php-$version
+	sed -i "s/-i -a/-i/" configure
+	./configure --prefix=/usr \
+		--with-config-file-path=/etc \
+		--with-mysql=/usr \
+		--with-zlib-dir=/usr/lib \
+		--with-openssl=/usr \
+		--without-pear \
+		--disable-pdo \
+		--enable-fastcgi \
+		--enable-force-cgi-redirect \
+		--with-jpeg-dir=/usr \
+		--with-gd
+	make
+	make INSTALL_ROOT=$PKG install
+	sed -i "/^extension_dir/s|\./|/usr/lib/php/extensions|" php.ini-dist
+	install -D -m 644 php.ini-dist $PKG/etc/php.ini
+	install -D -m 755 $SRC/php.rc $PKG/etc/rc.d/php
+}
