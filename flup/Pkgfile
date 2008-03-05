@@ -1,0 +1,14 @@
+# Description: Python modules for setting up a FastCGI server (ex. lighttpd)
+# URL: http://trac.saddi.com/flup
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: python
+
+name=flup
+version=1.0
+release=1
+source=(http://www.saddi.com/software/$name/dist/$name-$version.tar.gz)
+
+build () {
+	cd $name-$version
+	python setup.py install --root=$PKG
+}

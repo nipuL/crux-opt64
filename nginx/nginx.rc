@@ -1,0 +1,26 @@
+#
+# /etc/rc.d/nginx: start, stop or retart nginx server
+#
+
+case $1 in
+	start)
+		if [ -s /var/run/nginx.pid ]
+		then
+			echo "nginx is already running"
+			exit 1
+		fi
+		/usr/sbin/nginx
+		;;
+	stop)
+		kill -QUIT `cat /var/run/nginx.pid`
+		;;
+	restart)
+		;;
+	*)
+		$0 stop
+		sleep 1
+		$0 start
+		;;
+esac
+
+# End of file
