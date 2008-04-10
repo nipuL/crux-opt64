@@ -1,0 +1,15 @@
+# Description: Python implementation of markdown
+# URL: http://www.freewisdom.org/projects/python-markdown/
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: python
+
+name=python-markdown
+distname=markdown
+version=1.7
+release=1
+source=(http://dl.sf.net/sourceforge/$name/$distname-$version.tar.gz)
+
+build() {
+	cd $distname-$version
+	python setup.py install --root=$PKG
+}
