@@ -4,7 +4,7 @@
 # Depends on: libgmp
 
 name=ghc
-version=6.8.1
+version=6.8.2
 release=1
 source=(http://www.haskell.org/ghc/dist/$version/$name-$version-src.tar.bz2 http://www.haskell.org/ghc/dist/$version/$name-$version-src-extralibs.tar.bz2)
 
