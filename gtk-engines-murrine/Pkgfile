@@ -1,6 +1,7 @@
 # Description: Another fast cairo-based theme engine for gtk
 # URL:         http://cimi.netsons.org/pages/murrine.php
-# Maintainer:  Vincenzo Colosimo, vico at bicisport dot de
+# Maintainer:  Lucas Hazel, lucas at die dot net dot au
+# Packager:  Vincenzo Colosimo, vico at bicisport dot de
 # Depends on:  gtk
 
 name=gtk-engines-murrine
