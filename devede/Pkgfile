@@ -2,10 +2,10 @@
 # URL: http://www.rastersoft.com/programas/devede.html
 # Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Packager: Younes Hafri, ycruxi at club-internet dot fr
-# Depends on: pygtk, dvdauthor
+# Depends on: pygtk, dvdauthor, vcdimager
 
 name=devede
-version=2.12
+version=3.7
 release=1
 source=(http://www.rastersoft.com/descargas/$name-$version.tar.bz2)
 
