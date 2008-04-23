@@ -5,7 +5,7 @@
 
 name=ghc-http
 distname=HTTP
-version=3001.0.2
+version=3001.0.4
 release=1
 source=(http://hackage.haskell.org/packages/archive/$distname/$version/$distname-$version.tar.gz)
 

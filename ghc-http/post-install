@@ -21,9 +21,9 @@ exposed-modules: Network.Stream Network.TCP Network.HTTP
                  Network.Browser
 hidden-modules: Network.HTTP.Base64 Network.HTTP.MD5
                 Network.HTTP.MD5Aux
-import-dirs: /usr/lib/ghc-6.8.1/lib/HTTP-3001.0.2
-library-dirs: /usr/lib/ghc-6.8.1/lib/HTTP-3001.0.2
-hs-libraries: HSHTTP-3001.0.2
+import-dirs: /usr/lib/ghc-6.8.1/lib/HTTP-3001.0.4
+library-dirs: /usr/lib/ghc-6.8.1/lib/HTTP-3001.0.4
+hs-libraries: HSHTTP-3001.0.4
 extra-libraries:
 extra-ghci-libraries:
 include-dirs:
@@ -34,5 +34,5 @@ cc-options:
 ld-options:
 framework-dirs:
 frameworks:
-haddock-interfaces: /usr/share/doc/HTTP-3001.0.2/html/HTTP.haddock
-haddock-html: /usr/share/doc/HTTP-3001.0.2/html' | /usr/bin/ghc-pkg update -
+haddock-interfaces: /usr/share/doc/HTTP-3001.0.4/html/HTTP.haddock
+haddock-html: /usr/share/doc/HTTP-3001.0.4/html' | /usr/bin/ghc-pkg update -
