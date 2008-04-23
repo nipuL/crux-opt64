@@ -2,10 +2,10 @@
 # URL: http://perli.net/projekte/gpodder/
 # Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Packager: Mattias Hedenskog, mattias at hedenskog at se
-# Depends on: python, gtk, pygtk, pyxml, imagemagick
+# Depends on: gtk, pygtk, pyxml, imagemagick, feedparser
 
 name=gpodder
-version=0.9.4
+version=0.11.1
 release=1
 source=(http://download.berlios.de/$name/$name-$version.tar.gz)
 
