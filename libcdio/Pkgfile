@@ -4,15 +4,16 @@
 # Packager: Hannes Mayer, kontakt at ecarux de
 
 name=libcdio
-version=0.78.2
+version=0.80
 release=1
-source=(ftp://ftp.informatik.rwth-aachen.de/pub/gnu/$name/$name-$version.tar.gz)
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr  
+	./configure --prefix=/usr \
+		--mandir=/usr/man
     	make 
     	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/{info,man/jp}
+	rm -rf $PKG/usr/{share,man/jp}
 }
