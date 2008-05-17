@@ -1,0 +1,19 @@
+# $Id: $
+# Description: Digital photo camera software package
+# Maintainer: 
+# Packager: Olle Gustafsson <ogg at linux dot se>
+# URL: http://www.gphoto.org
+# Depends on: libusb imlib glib sed aalib
+
+name=gphoto2
+version=2.4.1
+release=1
+source=(http://dl.sf.net/sourceforge/gphoto/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr --disable-nls --mandir=/usr
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share/doc $PKG/usr/doc
+}
