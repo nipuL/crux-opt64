@@ -53,6 +53,7 @@ drwxr-xr-x	root/root	etc/asciidoc/javascripts/
 -rw-r--r--	root/root	etc/asciidoc/latex.conf
 -rw-r--r--	root/root	etc/asciidoc/linuxdoc.conf
 drwxr-xr-x	root/root	etc/asciidoc/stylesheets/
+-rw-r--r--	root/root	etc/asciidoc/stylesheets/compact.css
 -rw-r--r--	root/root	etc/asciidoc/stylesheets/docbook-xsl.css
 -rw-r--r--	root/root	etc/asciidoc/stylesheets/xhtml-deprecated-manpage.css
 -rw-r--r--	root/root	etc/asciidoc/stylesheets/xhtml-deprecated.css

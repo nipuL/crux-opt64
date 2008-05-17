@@ -4,7 +4,7 @@
 # Depends on: python
 
 name=asciidoc
-version=8.2.5
+version=8.2.6
 release=1
 source=(http://www.methods.co.nz/$name/$name-$version.tar.gz)
 
