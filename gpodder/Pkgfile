@@ -5,7 +5,7 @@
 # Depends on: gtk, pygtk, pyxml, imagemagick, feedparser
 
 name=gpodder
-version=0.11.1
+version=0.11.2
 release=1
 source=(http://download.berlios.de/$name/$name-$version.tar.gz)
 
@@ -14,4 +14,5 @@ build() {
     sed -i -e "s|share/man/man1|man/man1|" setup.py
     make DESTDIR=$PKG install
     rm -rf $PKG/usr/share/locale/
+    find $PKG -name '*.egg-info' | xargs rm
 }
