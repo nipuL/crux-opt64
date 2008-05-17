@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/bin/ghc-pkg unregister tagsoup-0.1
