@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ -z "`grep '^jabber:' /etc/group`" ]
+then
+  /usr/sbin/groupadd -g 55 jabber
+fi
+
+if [ -z "`grep '^jabber:' /etc/passwd`" ]
+then
+  /usr/sbin/useradd  -u 55 -g jabber -d /var/empty jabber
+  /usr/bin/passwd -l jabber
+fi
+
+# End of file
