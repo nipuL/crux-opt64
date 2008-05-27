@@ -4,7 +4,7 @@
 # Depends on: p5-net-server p5-io-multiplex p5-berkeleydb
 
 name=postgrey
-version=1.27
+version=1.31
 release=1
 source=(http://postgrey.schweikert.ch/pub/$name-$version.tar.gz $name.rc)
 
