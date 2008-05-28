@@ -1,0 +1,17 @@
+# Description: Perl module for managing FCGI applications
+# URL: http://search.cpan.org/dist/FCGI-ProcManager/
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: perl
+
+name=p5-fcgi-procmanager
+version=0.18
+release=1
+source=(http://www.cpan.org/modules/by-module/FCGI/FCGI-ProcManager-$version.tar.gz)
+
+build() {
+	cd FCGI-ProcManager-$version
+	perl Makefile.PL
+	make OPTIMIZE="${CFLAGS}"
+	make DESTDIR=$PKG install
+	find ${PKG} -name perllocal.pod -exec rm {} \;
+}
