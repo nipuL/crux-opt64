@@ -3,9 +3,10 @@
 # Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Packager: Younes Hafri, ycruxi at club-internet dot fr
 # Depends on: pygtk, dvdauthor, vcdimager
+# Nice to have: psyco
 
 name=devede
-version=3.7
+version=3.8c
 release=1
 source=(http://www.rastersoft.com/descargas/$name-$version.tar.bz2)
 
