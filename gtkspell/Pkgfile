@@ -1,10 +1,10 @@
 # Description: Spellchecker for GTK
 # URL: http://gtkspell.sourceforge.net
 # Maintainer: Lucas Hazel, lucas at die dot net dot au
-# Depends on: gtk aspell
+# Depends on: gtk enchant
 
 name=gtkspell
-version=2.0.11
+version=2.0.13
 release=1
 source=(http://gtkspell.sourceforge.net/download/$name-$version.tar.gz)
 
