@@ -1,10 +1,10 @@
 # Description: HTTP server and mail proxy
 # URL: http://nginx.net
 # Maintainer: Lucas Hazel, lucas at die dot net dot au
-# Depends on: zlib, pcre, openssl
+# Depends on: zlib, libpcre, openssl
 
 name=nginx
-version=0.6.26
+version=0.6.31
 release=1
 source=(http://www.nginx.eu/download/sources/$name-$version.tar.gz $name.rc)
 
@@ -32,7 +32,7 @@ build() {
 	
 	install -o root -g root -m 0755 objs/$name $PKG/usr/sbin/$name
 	
-	for f in `ls conf `
+	for f in `ls conf`
 	do
 		install -o root -g root -m 0644 conf/$f $PKG/etc/$name/$f
 	done
