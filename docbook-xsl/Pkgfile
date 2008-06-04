@@ -4,7 +4,7 @@
 # Packager: Antonio SJ Musumeci, bile at landofbile dot com
 
 name=docbook-xsl
-version=1.73.2
+version=1.74.0
 release=1
 source=(http://dl.sf.net/sourceforge/docbook/$name-$version.tar.gz)
 
