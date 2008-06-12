@@ -9,5 +9,5 @@ source=(http://dl.sf.net/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	install -D $name.el $PKG/usr/share/emacs/site-list/$name.el
+	install -D $name.el $PKG/usr/share/emacs/site-lisp/$name.el
 }
