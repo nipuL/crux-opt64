@@ -1,0 +1,13 @@
+# Description: PHP mode for Emacs
+# URL: http://php-mode.sourceforge.net/
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+
+name=php-mode
+version=1.4.0
+release=1
+source=(http://dl.sf.net/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	install -D $name.el $PKG/usr/share/emacs/site-list/$name.el
+}
