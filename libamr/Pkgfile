@@ -4,17 +4,17 @@
 # Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=libamr
-version=7.0.0.1
+version=7.0.0.3
 release=1
 source=(http://ftp.penguin.cz/pub/users/utx/amr/amrnb-6.1.0.4.tar.bz2 \
-	http://ftp.penguin.cz/pub/users/utx/amr/amrwb-7.0.0.1.tar.bz2)
+	http://ftp.penguin.cz/pub/users/utx/amr/amrwb-7.0.0.3.tar.bz2)
 
 build () {
     cd $SRC/amrnb-6.1.0.4
     ./configure --prefix=/usr
     make
     make DESTDIR=$PKG install
-    cd $SRC/amrwb-7.0.0.1
+    cd $SRC/amrwb-7.0.0.3
     ./configure --prefix=/usr
     make
     make DESTDIR=$PKG install

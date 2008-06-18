@@ -50,6 +50,6 @@ lrwxrwxrwx	root/root	usr/lib/libamrnb.so.2 -> libamrnb.so.2.0.0
 -rwxr-xr-x	root/root	usr/lib/libamrnb.so.2.0.0
 -rw-r--r--	root/root	usr/lib/libamrwb.a
 -rwxr-xr-x	root/root	usr/lib/libamrwb.la
-lrwxrwxrwx	root/root	usr/lib/libamrwb.so -> libamrwb.so.2.0.0
-lrwxrwxrwx	root/root	usr/lib/libamrwb.so.2 -> libamrwb.so.2.0.0
--rwxr-xr-x	root/root	usr/lib/libamrwb.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libamrwb.so -> libamrwb.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libamrwb.so.3 -> libamrwb.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libamrwb.so.3.0.0
