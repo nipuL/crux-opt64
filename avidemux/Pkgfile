@@ -5,7 +5,7 @@
 # Depends on: cmake
 
 name=avidemux
-version=2.4.1
+version=2.4.2
 release=1
 source=(http://download.berlios.de/avidemux/avidemux_$version.tar.gz)
 
