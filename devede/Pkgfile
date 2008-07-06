@@ -6,7 +6,7 @@
 # Nice to have: psyco
 
 name=devede
-version=3.8c
+version=3.9
 release=1
 source=(http://www.rastersoft.com/descargas/$name-$version.tar.bz2)
 
