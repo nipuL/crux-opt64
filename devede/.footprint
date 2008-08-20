@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	usr/lib/devede/
 -rwxr-xr-x	root/root	usr/lib/devede/devede_dvd.py
 -rwxr-xr-x	root/root	usr/lib/devede/devede_dvdmenu.py
 -rwxr-xr-x	root/root	usr/lib/devede/devede_executor.py
+-rwxr-xr-x	root/root	usr/lib/devede/devede_help.py
 -rwxr-xr-x	root/root	usr/lib/devede/devede_loadsave.py
 -rwxr-xr-x	root/root	usr/lib/devede/devede_main.py
 -rwxr-xr-x	root/root	usr/lib/devede/devede_newfiles.py
@@ -25,10 +26,14 @@ drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/devede/
 -rw-r--r--	root/root	usr/share/devede/background.png
 -rw-r--r--	root/root	usr/share/devede/barras.png
+-rw-r--r--	root/root	usr/share/devede/base_ntsc.mpg
+-rw-r--r--	root/root	usr/share/devede/base_ntsc_wide.mpg
+-rw-r--r--	root/root	usr/share/devede/base_pal.mpg
+-rw-r--r--	root/root	usr/share/devede/base_pal_wide.mpg
 -rw-r--r--	root/root	usr/share/devede/devede.glade
 -rw-r--r--	root/root	usr/share/devede/devede.svg
 -rw-r--r--	root/root	usr/share/devede/devedesans.ttf
 -rw-r--r--	root/root	usr/share/devede/estira.png
--rw-r--r--	root/root	usr/share/devede/silence.wav
+-rw-r--r--	root/root	usr/share/devede/silence.mp3
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/devede.svg
