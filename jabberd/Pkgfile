@@ -2,12 +2,13 @@
 # URL: http://jabberd.jabberstudio.org/2/
 # Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Packager: Matt Housh, jaeger at morpheus dot net
-# Depends on: openssl, libidn, db, gsasl
+# Depends on: openssl, libidn, udns, gsasl
 
 name=jabberd
-version=2.1.23
+version=2.2.4
 release=1
-source=(http://ftp.xiaoka.com/jabberd2/releases/$name-$version.tar.bz2)
+source=(http://ftp.xiaoka.com/jabberd2/releases/$name-$version.tar.bz2 \
+    $name.rc)
 
 build() {
 	# make sure pre-install has been run to create jabber user/group
@@ -19,9 +20,9 @@ build() {
 
 	cd $name-$version
 	./configure --prefix=/usr \
-		--sysconfdir=/etc \
-		--enable-ssl \
-		--enable-idn \
+		--sysconfdir=/etc/jabberd \
+		--mandir=/usr/man \
+		--enable-debug \
 		--enable-db \
 		--disable-mysql
 	make
@@ -30,8 +31,9 @@ build() {
 	chmod -R 640 $PKG/etc/jabberd/*
 	mkdir -p $PKG/var/run/jabberd \
 		$PKG/var/log/jabberd \
-		$PKG/var/jabberd/db
+		$PKG/var/jabberd/{db,pid}
 	chown -R jabber:jabber $PKG/var/run/jabberd \
 		$PKG/var/log/jabberd \
-		$PKG/var/jabberd/db
+		$PKG/var/jabberd/
+	install -D -m 755 $SRC/$name.rc $PKG/etc/rc.d/$name
 }

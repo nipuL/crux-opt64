@@ -4,8 +4,8 @@ drwxr-xr-x	root/jabber	etc/jabberd/
 -rw-r-----	root/jabber	etc/jabberd/c2s.xml.dist
 -rw-r-----	root/jabber	etc/jabberd/jabberd.cfg
 -rw-r-----	root/jabber	etc/jabberd/jabberd.cfg.dist
--rw-r-----	root/jabber	etc/jabberd/resolver.xml
--rw-r-----	root/jabber	etc/jabberd/resolver.xml.dist
+-rw-r-----	root/jabber	etc/jabberd/router-filter.xml
+-rw-r-----	root/jabber	etc/jabberd/router-filter.xml.dist
 -rw-r-----	root/jabber	etc/jabberd/router-users.xml
 -rw-r-----	root/jabber	etc/jabberd/router-users.xml.dist
 -rw-r-----	root/jabber	etc/jabberd/router.xml
@@ -21,21 +21,122 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/c2s
 -rwxr-xr-x	root/root	usr/bin/jabberd
--rwxr-xr-x	root/root	usr/bin/resolver
 -rwxr-xr-x	root/root	usr/bin/router
 -rwxr-xr-x	root/root	usr/bin/s2s
 -rwxr-xr-x	root/root	usr/bin/sm
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/jabberd/
+-rwxr-xr-x	root/root	usr/lib/jabberd/authreg_db.la
+-rwxr-xr-x	root/root	usr/lib/jabberd/authreg_db.so
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_active.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_active.so -> mod_active.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_active.so.0 -> mod_active.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_active.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_amp.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_amp.so -> mod_amp.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_amp.so.0 -> mod_amp.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_amp.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_announce.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_announce.so -> mod_announce.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_announce.so.0 -> mod_announce.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_announce.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_deliver.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_deliver.so -> mod_deliver.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_deliver.so.0 -> mod_deliver.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_deliver.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_disco-publish.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_disco-publish.so -> mod_disco-publish.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_disco-publish.so.0 -> mod_disco-publish.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_disco-publish.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_disco.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_disco.so -> mod_disco.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_disco.so.0 -> mod_disco.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_disco.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_echo.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_echo.so -> mod_echo.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_echo.so.0 -> mod_echo.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_echo.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_help.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_help.so -> mod_help.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_help.so.0 -> mod_help.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_help.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-last.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-last.so -> mod_iq-last.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-last.so.0 -> mod_iq-last.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-last.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-ping.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-ping.so -> mod_iq-ping.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-ping.so.0 -> mod_iq-ping.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-ping.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-private.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-private.so -> mod_iq-private.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-private.so.0 -> mod_iq-private.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-private.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-time.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-time.so -> mod_iq-time.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-time.so.0 -> mod_iq-time.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-time.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-vcard.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-vcard.so -> mod_iq-vcard.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-vcard.so.0 -> mod_iq-vcard.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-vcard.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-version.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-version.so -> mod_iq-version.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_iq-version.so.0 -> mod_iq-version.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_iq-version.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_offline.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_offline.so -> mod_offline.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_offline.so.0 -> mod_offline.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_offline.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_presence.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_presence.so -> mod_presence.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_presence.so.0 -> mod_presence.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_presence.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_privacy.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_privacy.so -> mod_privacy.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_privacy.so.0 -> mod_privacy.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_privacy.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_roster-publish.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_roster-publish.so -> mod_roster-publish.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_roster-publish.so.0 -> mod_roster-publish.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_roster-publish.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_roster.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_roster.so -> mod_roster.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_roster.so.0 -> mod_roster.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_roster.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_session.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_session.so -> mod_session.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_session.so.0 -> mod_session.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_session.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_status.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_status.so -> mod_status.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_status.so.0 -> mod_status.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_status.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_template-roster.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_template-roster.so -> mod_template-roster.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_template-roster.so.0 -> mod_template-roster.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_template-roster.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_vacation.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_vacation.so -> mod_vacation.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_vacation.so.0 -> mod_vacation.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_vacation.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_validate.la
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_validate.so -> mod_validate.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/jabberd/mod_validate.so.0 -> mod_validate.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/mod_validate.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/jabberd/storage_db.la
+-rwxr-xr-x	root/root	usr/lib/jabberd/storage_db.so
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man8/
 -rw-r--r--	root/root	usr/man/man8/c2s.8.gz
 -rw-r--r--	root/root	usr/man/man8/jabberd.8.gz
--rw-r--r--	root/root	usr/man/man8/resolver.8.gz
 -rw-r--r--	root/root	usr/man/man8/router.8.gz
 -rw-r--r--	root/root	usr/man/man8/s2s.8.gz
 -rw-r--r--	root/root	usr/man/man8/sm.8.gz
 drwxr-xr-x	root/root	var/
-drwxr-xr-x	root/root	var/jabberd/
+drwxr-xr-x	jabber/jabber	var/jabberd/
 drwxr-xr-x	jabber/jabber	var/jabberd/db/
+drwxr-xr-x	jabber/jabber	var/jabberd/pid/
 drwxr-xr-x	root/root	var/log/
 drwxr-xr-x	jabber/jabber	var/log/jabberd/
 drwxr-xr-x	root/root	var/run/
