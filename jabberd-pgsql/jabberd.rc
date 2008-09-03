@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# /etc/rc.d/jabberd
+#
+
+case $1 in
+    start)
+	sudo -u jabber jabberd& ;;
+    stop)
+	for f in /var/jabberd/pid/*; do
+	    kill `cat $f`
+	done ;;
+    *)
+	echo "usage: $0 [start|stop]" ;;
+esac

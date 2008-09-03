@@ -1,0 +1,41 @@
+# Description: A jabber server
+# URL: http://jabberd.jabberstudio.org/2/
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Packager: Matt Housh, jaeger at morpheus dot net
+# Depends on: openssl, libidn, udns, gsasl, postgresql
+
+name=jabberd-pgsql
+version=2.2.4
+release=1
+source=(http://ftp.xiaoka.com/jabberd2/releases/jabberd-$version.tar.bz2 \
+    jabberd.rc)
+
+build() {
+	# make sure pre-install has been run to create jabber user/group
+	(id jabber)
+	if [ $? == 1 ]; then
+		echo "Please run the pre-install script!"
+		exit 1
+	fi
+
+	cd jabberd-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc/jabberd \
+		--mandir=/usr/man \
+		--enable-debug \
+		--enable-db \
+		--disable-mysql \
+		--enable-pgsql
+
+	make
+	make DESTDIR=$PKG install
+	chown -R root:jabber $PKG/etc/jabberd
+	chmod -R 640 $PKG/etc/jabberd/*
+	mkdir -p $PKG/var/run/jabberd \
+		$PKG/var/log/jabberd \
+		$PKG/var/jabberd/{db,pid}
+	chown -R jabber:jabber $PKG/var/run/jabberd \
+		$PKG/var/log/jabberd \
+		$PKG/var/jabberd/
+	install -D -m 755 $SRC/jabberd.rc $PKG/etc/rc.d/jabberd
+}
