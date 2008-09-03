@@ -1,0 +1,8 @@
+PRE-INSTALL:
+
+Create the jabber user and group:
+
+   # groupadd -g 55 jabber
+   # useradd -u 55 -g jabber -d /var/empty jabber
+   # passwd -l jabber
+
