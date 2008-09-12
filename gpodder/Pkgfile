@@ -5,9 +5,9 @@
 # Depends on: gtk, pygtk, pyxml, imagemagick, feedparser, help2man
 
 name=gpodder
-version=0.12.2
+version=0.12.3
 release=1
-source=(http://download.berlios.de/$name/$name-$version.tar.gz)
+source=(http://download2.berlios.de/$name/$name-$version.tar.gz)
 
 build() {
     cd $name-$version
