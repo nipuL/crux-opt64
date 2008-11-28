@@ -5,7 +5,7 @@
 # Depends on: gtk, pygtk, pyxml, imagemagick, feedparser, help2man
 
 name=gpodder
-version=0.12.3
+version=0.13.1
 release=1
 source=(http://download2.berlios.de/$name/$name-$version.tar.gz)
 
