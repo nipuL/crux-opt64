@@ -4,7 +4,7 @@
 # Depends on: python postgresql
 
 name=psycopg2
-version=2.0.7
+version=2.0.8
 release=1
 source=(http://www.initd.org/pub/software/psycopg/$name-$version.tar.gz)
 
