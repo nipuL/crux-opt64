@@ -4,9 +4,9 @@
 # Depends on: zlib, libpcre, openssl
 
 name=nginx
-version=0.6.31
+version=0.6.34
 release=1
-source=(http://www.nginx.eu/download/sources/$name-$version.tar.gz $name.rc)
+source=(http://sysoev.ru/nginx/$name-$version.tar.gz $name.rc)
 
 build() {
 	cd $name-$version
@@ -26,21 +26,11 @@ build() {
 		--with-mail_ssl_module
 		
 	make
-	
-	# make install is retarded, let's do it by hand
-	install -o root -g root -m 0755 -d $PKG/{etc/{rc.d,$name/html},usr/sbin,var/log/$name}
-	
-	install -o root -g root -m 0755 objs/$name $PKG/usr/sbin/$name
-	
-	for f in `ls conf`
-	do
-		install -o root -g root -m 0644 conf/$f $PKG/etc/$name/$f
-	done
-	
-	for f in `ls html`
-	do
-		install -o root -g root -m 0644 html/$f $PKG/etc/$name/html/$f
-	done
-	
-	install -o root -g root -m 0755 $SRC/$name.rc $PKG/etc/rc.d/$name
+	make DESTDIR=$PKG install
+
+	mkdir $PKG/usr
+	mv $PKG/etc/nginx/sbin $PKG/usr
+	rm -rf $PKG/var/run
+
+	install -D -m 0755 $SRC/$name.rc $PKG/etc/rc.d/$name
 }
