@@ -4,7 +4,7 @@
 # Depends on: gtk enchant
 
 name=gtkspell
-version=2.0.14
+version=2.0.15
 release=1
 source=(http://gtkspell.sourceforge.net/download/$name-$version.tar.gz)
 
