@@ -17,5 +17,6 @@ build () {
     	python setup.py build
 	python setup.py install --home=$PKG/usr
 
+	mv $PKG/usr/lib/python $PKG/usr/lib/python2.6
     	chown -R root:root $PKG
 }
