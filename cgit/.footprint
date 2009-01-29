@@ -1,8 +1,0 @@
-drwxr-xr-x	root/root	etc/
--rwxr-xr-x	root/root	etc/cgitrc
-drwxr-xr-x	root/root	var/
-drwxr-xr-x	root/root	var/www/
-drwxr-xr-x	root/root	var/www/htdocs/
-drwxr-xr-x	root/root	var/www/htdocs/cgit/
--rwxr-xr-x	root/root	var/www/htdocs/cgit/cgit.cgi
--rwxr-xr-x	root/root	var/www/htdocs/cgit/cgit.css
