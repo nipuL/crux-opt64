@@ -1,8 +1,0 @@
-drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/dovecot/
-drwxr-xr-x	root/root	usr/lib/dovecot/modules/
-drwxr-xr-x	root/root	usr/lib/dovecot/modules/lda/
--rw-r--r--	root/root	usr/lib/dovecot/modules/lda/lib90_cmusieve_plugin.a
--rwxr-xr-x	root/root	usr/lib/dovecot/modules/lda/lib90_cmusieve_plugin.la
--rwxr-xr-x	root/root	usr/lib/dovecot/modules/lda/lib90_cmusieve_plugin.so
