@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib32/
+lrwxrwxrwx	root/root	usr/lib32/libsmjpeg-0.2.so.0 -> libsmjpeg-0.2.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib32/libsmjpeg-0.2.so.0.0.2
+-rw-r--r--	root/root	usr/lib32/libsmjpeg.a
+-rwxr-xr-x	root/root	usr/lib32/libsmjpeg.la
+lrwxrwxrwx	root/root	usr/lib32/libsmjpeg.so -> libsmjpeg-0.2.so.0.0.2
