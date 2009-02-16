@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib32/
+lrwxrwxrwx	root/root	usr/lib32/libSDL_sound-1.0.so.1 -> libSDL_sound-1.0.so.1.0.2
+-rwxr-xr-x	root/root	usr/lib32/libSDL_sound-1.0.so.1.0.2
+-rw-r--r--	root/root	usr/lib32/libSDL_sound.a
+-rwxr-xr-x	root/root	usr/lib32/libSDL_sound.la
+lrwxrwxrwx	root/root	usr/lib32/libSDL_sound.so -> libSDL_sound-1.0.so.1.0.2
