@@ -1,0 +1,16 @@
+# Description: Sound library for SDL
+# URL: http://icculus.org/SDL_sound/
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: smpeg libvorbis flac speex libmodplug 
+
+name=sdl_sound
+version=1.0.3
+release=1
+source=(http://icculus.org/SDL_sound/downloads/SDL_sound-$version.tar.gz)
+
+build() {
+	cd SDL_sound-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
