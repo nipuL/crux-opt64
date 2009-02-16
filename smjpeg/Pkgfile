@@ -1,0 +1,18 @@
+# Description: MJPEG decoding library
+# URL: http://icculus.org/smjpeg/
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: libsdl
+
+name=smjpeg
+version=r34
+release=1
+source=(http://crux64.die.net.au/files/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	(autoreconf -f -i)
+	sh autogen.sh
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
